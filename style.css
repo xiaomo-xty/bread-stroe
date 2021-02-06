@@ -1,0 +1,118 @@
+
+body{
+    margin: 0px;
+    background: url("image/bcg.jpg");
+}
+header{
+    box-shadow:3px;
+    color: white;
+    background-image: url("image/index.png");
+    background-size: 100%;
+    margin: 5px;
+    margin-top: 0;
+    padding: 10px;
+	padding-top:2px;
+    height: 300px;
+    text-align: center;
+    background-position: center;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 15px;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: 500;
+    text-shadow: black 0 0 2px;
+}
+header .logo a{
+    background: url("image/logo.png");
+    background-size: 120px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999999px;
+    position: relative;
+    top: -20px;
+    width: 100px;
+    height: 70px;
+}
+
+.fetures{
+    background: url("image/section-bgi.jpg");
+    margin: 0px;
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fetures a{
+    text-align: center;
+    margin: auto;
+    color: gray;
+}
+.fetures a figure img{
+    border-radius:5%;
+    box-shadow: black 10px 10px 10px;
+}
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav li a:hover{/*当鼠标悬浮在超链接上时，超链接的样式*/
+		transform:scale(1.2) rotate(360deg);/*设置缩放、旋转角度*/
+        transition:all 2s linear 0;/*设置动画时间*/
+        text-shadow: black 2px 2px 2px;
+    }
+.fetures a{
+		text-decoration: none;
+	}
+.fetures a:hover{/*当鼠标悬浮在超链接上时，超链接的样式*/
+		transform:scale(1.2) rotate(360deg);/*设置缩放、旋转角度*/
+        transition:all 2s linear 0;/*设置动画时间*/
+    }
+
+header .moble{
+    display: none;
+}
+
+@media screen and (max-width: 548px)
+{
+  header{
+	margin:0;
+	width:auto;
+	height:200px;
+  }
+
+    header ul li{
+	  margin-left: 20px;
+	  font-size:15px;
+	}
+	
+	.nav li{
+	  margin-left:0px;
+	  text-align:center;
+	  margin-right:40px ;
+	  margin-bottom:0;
+	}
+	header .logo{
+	  display:block;
+	  margin-top:10px;
+	}
+    header .moble{
+    display: inline-block;
+    }
+    header .desktop{
+    display: none;
+    }
+}
